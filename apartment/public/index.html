@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Visitor Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div>
+                <h2>APARTMENT</h2>
+                <p>VISITOR MANAGEMENT</p>
+            </div>
+        </div>
+
+        <p class="menu-heading">MAIN MENU</p>
+
+        <nav>
+            <a href="#dashboard" class="nav-link active"
+               data-page="dashboard">
+                <i class="fa-solid fa-chart-pie"></i>
+                Dashboard
+            </a>
+
+            <a href="#register" class="nav-link"
+               data-page="register">
+                <i class="fa-solid fa-user-plus"></i>
+                Register Visitor
+            </a>
+
+            <a href="#residents" class="nav-link"
+               data-page="residents">
+                <i class="fa-solid fa-users"></i>
+                Residents
+            </a>
+
+            <a href="#records" class="nav-link"
+               data-page="records">
+                <i class="fa-solid fa-clipboard-list"></i>
+                Visitor Records
+            </a>
+
+            <a href="#apartment" class="nav-link"
+               data-page="apartment">
+                <i class="fa-solid fa-building"></i>
+                Apartment Details
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="security-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+                <h4>Security Panel</h4>
+                <p>Visitor Management System</p>
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <h2 id="page-title">Dashboard</h2>
+                <p id="page-subtitle">
+                    Welcome to your apartment management dashboard.
+                </p>
+            </div>
+
+            <div class="admin-profile">
+                <div class="admin-icon">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+
+                <div>
+                    <h4>Security Admin</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- ONLY SELECTED PAGE WILL BE SHOWN -->
+        <div id="page-content"></div>
+
+        <footer>
+            Apartment Visitor Management System
+            <span>© 2026 All Rights Reserved</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
